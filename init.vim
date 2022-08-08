@@ -11,6 +11,8 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } "		to find files
 Plug 'nvim-lualine/lualine.nvim' "								Statusbar
 Plug 'lukas-reineke/indent-blankline.nvim' "					indent liner
 Plug 'romgrk/barbar.nvim' "										buffer bar
+Plug 'nvim-lua/plenary.nvim' "									dependency for renamer
+Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' } " 		easy rename
 
 " code completion Plugins
 Plug 'neovim/nvim-lspconfig' "									LSP settings
@@ -32,14 +34,11 @@ lua require("plugins.cmp.settings")
 lua require("plugins.lualine.settings")
 lua require("plugins.blankline.settings")
 lua require("plugins.barbar.settings")
+lua require("plugins.renamer.settings")
 
 " Set vim theme
 let g:onedark_config = {'style' : 'deep'}
 colorscheme onedark
-
-" Set airline
-let g:airline_theme='codedark'
-let g:airline#extensions#tabline#enabled = 1 "		turn on buffer list
 
 " Set vim basic settings
 syntax on
@@ -62,3 +61,6 @@ nmap n, :NvimTreeFocus<CR>
 " Mapping for buffer explore
 nmap ./ :bnext<CR>
 nmap /. :bprevious<CR>
+inoremap <silent> <F2> <cmd>lua require('renamer').rename()<cr>
+nnoremap <silent> <F2> <cmd>lua require('renamer').rename()<cr>
+vnoremap <silent> <leader>rn <cmd>lua require('renamer').rename()<cr>
