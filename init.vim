@@ -19,6 +19,8 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'L3MON4D3/LuaSnip' "										Snippet engine
+Plug 'saadparwaiz1/cmp_luasnip'
 call plug#end()
 
 " Call Plugin Settings
@@ -48,6 +50,7 @@ set showmatch
 set laststatus=2
 set ruler
 set ts=4
+set sw=4
 set mouse=a
 " Set space to some character
 set list listchars=tab:»\ ,trail:·,extends:>,precedes:<,eol:↲,nbsp:␣ 
@@ -55,6 +58,7 @@ set list listchars=tab:»\ ,trail:·,extends:>,precedes:<,eol:↲,nbsp:␣
 " =======Key mapping=======
 " Mapping for NvimTree
 nmap nm :NvimTreeToggle<CR>
+nmap n, :NvimTreeFocus<CR>
 " Mapping for buffer explore
 nmap ./ :bnext<CR>
 nmap /. :bprevious<CR>
