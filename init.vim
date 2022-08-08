@@ -1,14 +1,17 @@
-" Plugins
+"Plugins
 call plug#begin()
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} "				toggle terminal
 Plug 'kyazdani42/nvim-web-devicons' " 							optional, for file icons
 Plug 'kyazdani42/nvim-tree.lua' " 								Nerdtree alternatvie
-Plug 'bling/vim-airline' "										vim-airline
 Plug 'navarasu/onedark.nvim' "									theme : onedark
 Plug 'tomasiser/vim-code-dark' "								airline theme : codedark
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}	"	treesitter (syntax highlight)
 Plug 'nvim-lua/plenary.nvim' "									Dependency for telescope
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } "		to find files
+Plug 'nvim-lualine/lualine.nvim' "								Statusbar
+Plug 'lukas-reineke/indent-blankline.nvim' "					indent liner
+Plug 'romgrk/barbar.nvim' "										buffer bar
+
 " code completion Plugins
 Plug 'neovim/nvim-lspconfig' "									LSP settings
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -24,6 +27,9 @@ lua require("plugins.nvimtree.settings")
 lua require("plugins.lsp.settings")
 lua require("plugins.treesitter.settings")
 lua require("plugins.cmp.settings")
+lua require("plugins.lualine.settings")
+lua require("plugins.blankline.settings")
+lua require("plugins.barbar.settings")
 
 " Set vim theme
 let g:onedark_config = {'style' : 'deep'}
