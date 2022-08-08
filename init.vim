@@ -49,6 +49,8 @@ set laststatus=2
 set ruler
 set ts=4
 set mouse=a
+" Set space to some character
+set list listchars=tab:»\ ,trail:·,extends:>,precedes:<,eol:↲,nbsp:␣ 
 
 " =======Key mapping=======
 " Mapping for NvimTree
