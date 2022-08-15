@@ -1,5 +1,18 @@
+" **************************************************************************** "
+"                                                                              "
+"                                                         :::      ::::::::    "
+"    init.vim                                           :+:      :+:    :+:    "
+"                                                     +:+ +:+         +:+      "
+"    By: sungjpar <sungjpar@student.42seoul.kr      +#+  +:+       +#+         "
+"                                                 +#+#+#+#+#+   +#+            "
+"    Created: 2022/08/15 13:36:59 by sungjpar          #+#    #+#              "
+"    Updated: 2022/08/15 13:44:50 by sungjpar         ###   ########.fr        "
+"                                                                              "
+" **************************************************************************** "
+
 "Plugins
 call plug#begin()
+Plug 'pbondoer/vim-42header' "									42 header
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} "				toggle terminal
 Plug 'kyazdani42/nvim-web-devicons' " 							optional, for file icons
 Plug 'kyazdani42/nvim-tree.lua' " 								Nerdtree alternatvie
@@ -13,8 +26,10 @@ Plug 'lukas-reineke/indent-blankline.nvim' "					indent liner
 Plug 'romgrk/barbar.nvim' "										buffer bar
 Plug 'nvim-lua/plenary.nvim' "									dependency for renamer
 Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' } " 		easy rename
+Plug 'alexandregv/norminette-vim' "								norminette checker
 
 " code completion Plugins
+Plug 'williamboman/nvim-lsp-installer' "						LSP Installer
 Plug 'neovim/nvim-lspconfig' "									LSP settings
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
