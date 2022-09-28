@@ -6,7 +6,7 @@
 "    By: sungjpar <sungjpar@student.42seoul.kr      +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2022/08/15 13:36:59 by sungjpar          #+#    #+#              "
-"    Updated: 2022/08/15 13:44:50 by sungjpar         ###   ########.fr        "
+"    Updated: 2022/09/28 13:59:35 by sungjpar         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -27,6 +27,7 @@ Plug 'romgrk/barbar.nvim' "										buffer bar
 Plug 'nvim-lua/plenary.nvim' "									dependency for renamer
 Plug 'filipdutescu/renamer.nvim', { 'branch': 'master' } " 		easy rename
 Plug 'alexandregv/norminette-vim' "								norminette checker
+Plug 'EdenEast/nightfox.nvim'	"								theme nightfox
 
 " code completion Plugins
 Plug 'williamboman/nvim-lsp-installer' "						LSP Installer
@@ -53,7 +54,7 @@ lua require("plugins.renamer.settings")
 
 " Set vim theme
 let g:onedark_config = {'style' : 'deep'}
-colorscheme onedark
+colorscheme nightfox
 
 " Set vim basic settings
 syntax on
