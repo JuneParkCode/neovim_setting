@@ -6,7 +6,7 @@
 "    By: sungjpar <sungjpar@student.42seoul.kr      +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2022/08/15 13:36:59 by sungjpar          #+#    #+#              "
-"    Updated: 2022/09/28 13:59:35 by sungjpar         ###   ########.fr        "
+"    Updated: 2022/11/05 17:26:34 by sungjpar         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -16,7 +16,6 @@ Plug 'pbondoer/vim-42header' "									42 header
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} "				toggle terminal
 Plug 'kyazdani42/nvim-web-devicons' " 							optional, for file icons
 Plug 'kyazdani42/nvim-tree.lua' " 								Nerdtree alternatvie
-Plug 'navarasu/onedark.nvim' "									theme : onedark
 Plug 'tomasiser/vim-code-dark' "								airline theme : codedark
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}	"	treesitter (syntax highlight)
 Plug 'nvim-lua/plenary.nvim' "									Dependency for telescope
@@ -80,3 +79,5 @@ nmap /. :bprevious<CR>
 inoremap <silent> <F2> <cmd>lua require('renamer').rename()<cr>
 nnoremap <silent> <F2> <cmd>lua require('renamer').rename()<cr>
 vnoremap <silent> <leader>rn <cmd>lua require('renamer').rename()<cr>
+
+au BufNewFile,BufRead *.tpp set filetype=cpp
