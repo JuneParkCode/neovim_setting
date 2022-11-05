@@ -6,7 +6,11 @@
 "    By: sungjpar <sungjpar@student.42seoul.kr      +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2022/08/15 13:36:59 by sungjpar          #+#    #+#              "
+<<<<<<< HEAD
 "    Updated: 2022/11/05 17:26:34 by sungjpar         ###   ########.fr        "
+=======
+"    Updated: 2022/11/04 18:50:32 by sungjpar         ###   ########.fr        "
+>>>>>>> 7499dda8eb1df6cd7e8089fffbdfc6aec441fdc0
 "                                                                              "
 " **************************************************************************** "
 
